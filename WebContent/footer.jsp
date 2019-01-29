@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 
 <p>COPYRIGHTS - MENTIONS LEGALES</p>
 <p>DATE - <%= new Date() %></p>

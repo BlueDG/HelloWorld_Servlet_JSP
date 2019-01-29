@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/MyServlet")
+@WebServlet(name="AutreChose", urlPatterns= {"/MyServlet"})
 public class MyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -58,6 +58,8 @@ public class MyServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
+		String id = req.getParameter("id");
+		String pwd = req.getParameter("password");
+	
 	}
 }
